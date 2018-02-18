@@ -1,0 +1,36 @@
+ターミナルのコマンド
+
+cd ：ディレクトリを移動
+ls：今いるディレクトリに存在するファイルを表示
+pwd：今いるディレクトリを表示
+
+
+デスクトップに「ruby」フォルダを作成し、その中に「training」フォルダを作成し、「hello.rb」ファイルを作成しましょう！！！
+
+cd .. ：一つ上の階層に戻る
+mkdir：フォルダを作る
+touch：ファイルを作る
+
+
+
+
+
+vimの立ち上げ
+
+ vi ファイル名
+i：挿入モード
+esc：挿入モードの終了
+:wq：vimの終了
+
+
+vim を立ち上げる
+vi ~/.bash_profile
+
+bash_profileの中身を読み込む
+ source ~/.bash_profile
+
+
+aliasの基本的な書き方
+ alias m="mkdir"
+
+m で mkdir を入力できるようにする
