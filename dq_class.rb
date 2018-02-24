@@ -23,7 +23,7 @@ class Hero
  end
 
 
- def slime_at(slime_attack)
+ def slime_at(slime_attack)   #引数slime.attackと書くとメソッドと認識されてエラーがでるのでslime_attackと書く。意味は同じ。
  	self.hp -= slime_attack
 
  	if self.hp > 0

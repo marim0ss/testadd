@@ -1,20 +1,32 @@
-require "./class.rb"
-
-calc = Calculator.new
-
-puts calc.sum
-puts calc.array.length
-
-calc.makearray(100)
-puts calc.array.length
-
-calc.sum_array
-puts calc.sum
+class Calculator
+ attr_accessor :sum
+ attr_accessor :array
+ #attr_accessor :makearray
 
 
+ def initialize
+ 	self.sum = 0
+ 	self.array = []
 
-#array = [1,2,3,4,5,6]
-#sum = 0
-#
-#sum = array.inject(:+)
-#puts sum
+ end
+
+#makearray = []
+
+def makearray(num)
+ num.times do |n|
+
+ 	self.array[n] = n
+
+ end
+end
+
+ def sum_array
+
+  #self.array.each do |num|      この２行の処理が
+  #self.sum += num               injectを使ってスッキリ書ける
+  self.sum = self.array.inject(:+)
+ end
+
+
+
+end
