@@ -17,7 +17,7 @@ end
 puts "あなたの引いたおみくじは#{omikuji}です"
 =end
 
-omikuji = ["大吉","中吉","小吉","凶","末吉","大凶"]
+omikuji = ["大吉","中吉","小吉","凶","末吉"]
 
 puts omikuji[rand(omikuji.length)]
 
